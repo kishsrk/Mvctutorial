@@ -1,0 +1,56 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div style="background-color:cornflowerblue;text-align:center">
+        <div class="jumbotron text-center">
+            <h1>Welcome to my Page!!</h1>
+            <p>Select your Products and Services of Products</p>
+        </div>
+
+    </div>
+    @*<nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="~/Products/Product"> Products</a>
+            </div>
+            <div class="navbar-header">
+                <a class="navbar-brand" href="~/Services/Servicing"> Services</a>
+            </div>    
+        </div>
+    </nav>*@
+   
+    <div class="panel panel-default" style="text-align:center; font-size:xx-large">
+       
+        <img class="img-thumbnail" src="~/Image/products.jpg" alt="Chania">
+        <div>
+            @Html.ActionLink("Go to Products", "Product", "Products")
+        </div> 
+    </div>
+    <div class="panel panel-default" style="text-align:center; font-size:xx-large">
+       
+        <img class="img-thumbnail" src="~/Image/services.jpg" alt="Chania">
+        <div>
+            @Html.ActionLink("Go to Services", "Servicing", "Services")
+        </div>
+    </div>
+    
+</body>
+</html>
